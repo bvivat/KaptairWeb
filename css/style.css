@@ -1,0 +1,104 @@
+:root {
+    --primary: #47525E;
+    --secondary: #F8FAFC;
+    --accent2: #F0F0F0;
+    --accent: #5a6978;
+}
+
+.rounded-1 {
+    border-radius: 0.4rem !important;
+}
+
+.test {
+    background-color: green;
+    border: 1px solid red;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.woff) format('woff');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    vertical-align: sub;
+}
+
+body {
+    margin-top: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bordered-right {
+    position: relative;
+}
+
+.bordered-right:after {
+    content: '';
+    height: 60%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    background-color: #969faa;
+}
+
+.bordered-left {
+    position: relative;
+}
+
+.bordered-left:after {
+    content: '';
+    height: 60%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    background-color: #969faa;
+}
+
+.zoom {
+    transition: transform .3s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.nav-link {
+    transition: 0.2s;
+}
+
+.navbar {
+    transition: top 0.5s ease;
+}
+
+.navbar-hide {
+    top: -70px;
+}
+
+.container-fluid {
+    height: 100vh;
+}
